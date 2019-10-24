@@ -1,7 +1,7 @@
 # Efface toutes les bases de données précédentes : 
-  Doctor.delete_all
-  Patient.delete_all
-  Appointment.delete_all
+  Doctor.destroy_all
+  Patient.destroy_all
+  Appointment.destroy_all
 
 # Définit les docteurs :
   doc1 = Doctor.create(id: 1,first_name: "Céline", last_name: "LE BRUN", specialty: "chirurgien", zip_code: "34000")
