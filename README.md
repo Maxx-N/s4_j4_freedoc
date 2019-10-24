@@ -25,3 +25,8 @@ ENTREZ OU COPIEZ LES COMMANDES SUIVANTES DANS VOTRE TERMINAL :
 
   * (tapez ensuite les commandes que vous voulez dans la console rails)
 
+  * exit (pour quitter la console)
+
+
+
+
