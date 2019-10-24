@@ -25,21 +25,32 @@
 
 # Définit un rendez-vous entre le Dr. LE BRUN et Mme JAUNE le 22 novembre à 16h :
   rdv1 = Appointment.create(id: 1,doctor_id: 1, patient_id: 4, date: DateTime.new(2019,11,22,16,00))
-  puts "\n"
-  puts "Le rendez-vous du 22 novembre a été ajouté"
 
 # Définit un rendez-vous entre le Dr. LE CHAUVE et M. BLEU le 1er décembre à 11h :
-  rdv1 = Appointment.create(id: 2,doctor_id: 4, patient_id: 2, date: DateTime.new(2019,12,01,11,00))
-  puts "\n"
-  puts "Le rendez-vous du 1er décembre a été ajouté :"
+  rdv2 = Appointment.create(id: 2,doctor_id: 4, patient_id: 2, date: DateTime.new(2019,12,01,11,00))
 
 # Définit un rendez-vous entre le Dr. LE ROUX et Mme JAUNE le 2 janvier à 9h :
-  rdv1 = Appointment.create(id: 3,doctor_id: 3, patient_id: 4, date: DateTime.new(2020,01,02,9,00))
-  puts "\n"
-  puts "Le rendez-vous du 2 janvier a été ajouté :"
+  rdv3 = Appointment.create(id: 3,doctor_id: 3, patient_id: 4, date: DateTime.new(2020,01,02,9,00))
 
-# Affiche la liste des rendez-vous médicaux de Mme JAUNE (date, nom et spécialité du docteur)
   puts "\n"
-  puts "Voici la liste des rendez-vous médicaux de Madame Jaune :"
+  puts "3 rendez-vous ont été créés."
+
+# Affiche la liste des médecins de Mme JAUNE (nom, spécialité et code postal)
   puts "\n"
-  tp pat4.appointments
+  puts "Voici la liste des médecins de Madame JAUNE :"
+  puts "\n"
+  tp Patient.find(4).doctors, :last_name, :specialty, :zip_code
+
+# Modifie le médecin du rendez-vous de Mme JAUNE : LE BRUN --> LE ROUX
+  puts "\n"
+  puts "Madame JAUNE s'était trompée en prenant rendez-vous avec le chirurgien ..."
+  puts "Elle voulait en fait prendre rendez-vous chez le dentiste !"
+  rdv1.update(doctor_id: 4)
+  puts "\n"
+  puts "--> RENDEZ-VOUS MODIFIÉ <--"
+
+# Affiche la liste mise à jour des médecins de Mme JAUNE (nom, spécialité et code postal)
+  puts "\n"
+  puts "Voici la nouvelle liste des médecins de Madame JAUNE :"
+  puts "\n"
+  tp Patient.find(4).doctors, :last_name, :specialty, :zip_code
