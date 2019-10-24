@@ -1,34 +1,33 @@
 ENTREZ OU COPIEZ LES COMMANDES SUIVANTES DANS VOTRE TERMINAL : 
 
 
+  Pour lancer le programme :
 
-    Pour lancer le programme :
+  * git clone https://github.com/Maxx-N/s4_j4_freedoc.git
 
-    * git clone https://github.com/Maxx-N/s4_j4_freedoc.git
+  * cd s4_j4_freedoc
 
-    * cd s4_j4_freedoc
+  * bundle install
 
-    * bundle install
+  * rails db:migrate
 
-    * rails db:migrate
-
-    * rails db:seed 
-
-
-
-    Pour ouvrir le fichier seeds.rb :
-
-    * open db/seeds.rb
+  * rails db:seed 
 
 
 
-    Pour jouer avec les bases de données : 
+  Pour ouvrir le fichier seeds.rb :
 
-    * rails console
+  * open db/seeds.rb
 
-    * (tapez ensuite les commandes que vous voulez dans la console rails)
 
-    * exit (pour quitter la console)
+
+  Pour jouer avec les bases de données : 
+
+  * rails console
+
+  * (tapez ensuite les commandes que vous voulez dans la console rails)
+
+  * exit (pour quitter la console)
 
 
 
