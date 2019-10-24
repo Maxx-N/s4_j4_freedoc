@@ -1,15 +1,20 @@
 POUR LANCER LE PROGRAMME :
 
-Entrez ou copiez successivement les commandes suivantes dans votre terminal : 
 
-* git clone https://github.com/Maxx-N/s4_j4_freedoc.git
+  Entrez ou copiez successivement les commandes suivantes dans votre terminal : 
 
-* cd s4_j4_freedoc
+  * git clone https://github.com/Maxx-N/s4_j4_freedoc.git
 
-* bundle install
+  * cd s4_j4_freedoc
 
-* rails db:seed 
+  * bundle install
 
-Puis, si vous souhaitez jouer avec les bases de données : 
+  * rails db:seed 
 
-* rails console
+
+  Puis, si vous souhaitez jouer avec les bases de données : 
+
+  * rails console
+
+  * (tapez ensuite les commandes que vous voulez dans la console rails)
+
