@@ -1,24 +1,15 @@
-# README
+POUR LANCER LE PROGRAMME :
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Entrez ou copiez successivement les commandes suivantes dans votre terminal : 
 
-Things you may want to cover:
+* git clone https://github.com/Maxx-N/s4_j4_freedoc.git
 
-* Ruby version
+* cd s4_j4_freedoc
 
-* System dependencies
+* bundle install
 
-* Configuration
+* rails db:seed 
 
-* Database creation
+Puis, si vous souhaitez jouer avec les bases de données : 
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* rails console
