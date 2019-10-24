@@ -1,7 +1,7 @@
-POUR LANCER LE PROGRAMME :
+ENTREZ OU COPIEZ LES COMMANDES SUIVANTES DANS VOTRE TERMINAL : 
 
 
-  Entrez ou copiez successivement les commandes suivantes dans votre terminal : 
+  Pour lancer le programme :
 
   * git clone https://github.com/Maxx-N/s4_j4_freedoc.git
 
@@ -9,10 +9,17 @@ POUR LANCER LE PROGRAMME :
 
   * bundle install
 
+  * rails db:migrate
+
   * rails db:seed 
 
 
-  Puis, si vous souhaitez jouer avec les bases de données : 
+  Pour ouvrir le fichier seeds.rb :
+
+  * open db/seeds.rb
+
+
+  Pour jouer avec les bases de données : 
 
   * rails console
 
